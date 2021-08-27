@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap');
+
+
+:root{
+  --outer-shadow: 3px 3px 3px #222, -3px -3px 3px #444;
+  --inner-shadow: inset 3px 3px 3px #222, inset -3px -3px 3px #444;
+  --bg-dark: #333;
+  --text-color: #f9f9f9;
+  --text-color-01: #555;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  min-height: 100vh;
+  font-family: Orbitron, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  padding: 20px;
+}
+
+nav h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  transition: all .5s ease-in;
+  color: var(--text-color-01);
+  text-align: center;
+}
+
+.outer-shadow{
+  box-shadow: var(--outer-shadow);
+}
+
+.inner-shadow{
+  box-shadow: var(--inner-shadow);
+}
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .timer-wrapper-outer{
+  box-shadow: var(--inner-shadow);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.container .timer-wrapper{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--outer-shadow);
+  border: 10px solid #333;
+  border-radius: 50%;
+}
+
+.container .timer-wrapper .timer{
+  background-color: #444;
+  padding: 15px;
+  border-radius: 30px;
+  user-select: none;
+
+}
+
+.container .timer-wrapper:hover .timer{
+  transform: translateY(-45px);
+  transition: all 0.5s ease;
+}
+
+.container .timer-wrapper:hover .timer h1{
+  color: var(--text-color);
+  transition: all 0.6s ease;
+}
+
+.container .timer-wrapper .timer h1{
+  font-size: 48px;
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+@media(max-width:480px){
+  .container .timer-wrapper{
+    width: 300px;
+    height: 300px;
+  }
+
+  .container .timer-wrapper-outer{
+    padding: 30px;
+  }
+
+  .container .timer-wrapper .timer h1{
+    font-size: 38px;
+  }
+}
