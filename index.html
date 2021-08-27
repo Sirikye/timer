@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer</title>
-  <link rel="stylesheet" href="timer.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Timer, JavaScript timer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/timer.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body>
@@ -20,7 +23,12 @@
       <div class="timer-wrapper-outer">
         <div class="timer-wrapper">
           <div class="timer">
-            <h1 id="display_timer">00:00:00</h1>
+            <h1 id="display_timer"><span>00</span>:<span>00</span>:<span>00</span></h1>
+          </div>
+
+          <div class="timer-controls">
+            <span class="play-btn outer-shadow"><i class="fas fa-play"></i></span>
+            <span class="reset-btn outer-shadow"><i class="fas fa-redo-alt"></i></span>
           </div>
         </div>
       </div>
@@ -28,7 +36,7 @@
     </div>
   </main>
 
-  <script src="timer.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
