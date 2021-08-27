@@ -44,6 +44,14 @@ nav h1{
   text-align: center;
 }
 
+.show{
+  display: inline-block;
+}
+
+.hide{
+  display: none;
+}
+
 .outer-shadow{
   box-shadow: var(--outer-shadow);
 }
@@ -62,8 +70,8 @@ nav h1{
 }
 
 .container .timer-wrapper-outer{
-  box-shadow: var(--inner-shadow);
-  padding: 40px;
+  box-shadow: var(--outer-shadow);
+  padding: 30px;
   border-radius: 5px;
 }
 
@@ -74,17 +82,21 @@ nav h1{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: var(--outer-shadow);
+  box-shadow: var(--inner-shadow);
   border: 10px solid #333;
   border-radius: 50%;
+  position: relative;
 }
 
 .container .timer-wrapper .timer{
   background-color: #444;
-  padding: 15px;
+  height: 100px;
+  width: 80%;
   border-radius: 30px;
   user-select: none;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .timer-wrapper:hover .timer{
@@ -92,7 +104,7 @@ nav h1{
   transition: all 0.5s ease;
 }
 
-.container .timer-wrapper:hover .timer h1{
+.container .timer-wrapper:hover .timer h1, .container .timer-wrapper:hover .timer-controls span{
   color: var(--text-color);
   transition: all 0.6s ease;
 }
@@ -102,6 +114,28 @@ nav h1{
   color: #333;
   transition: all 0.5s ease;
 }
+
+.container .timer-wrapper .timer-controls{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .timer-wrapper .timer-controls span{
+  font-size: 30px;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--text-color-01);
+  padding: 15px;
+  border-radius: 50%;
+  
+}
+
 
 @media(max-width:480px){
   .container .timer-wrapper{
