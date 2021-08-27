@@ -1,0 +1,23 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sirikye/timer.git"
+  },
+  "keywords": [],
+  "author": "Fred Sirikye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sirikye/timer/issues"
+  },
+  "homepage": "https://sirikye.github.io/timer",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
