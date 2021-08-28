@@ -92,7 +92,7 @@ nav h1{
   background-color: #444;
   height: 100px;
   width: 80%;
-  border-radius: 30px;
+  border-radius: 10px;
   user-select: none;
   display: flex;
   align-items: center;
@@ -139,15 +139,23 @@ nav h1{
 
 @media(max-width:480px){
   .container .timer-wrapper{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   .container .timer-wrapper-outer{
-    padding: 30px;
+    padding: 20px;
   }
 
   .container .timer-wrapper .timer h1{
     font-size: 38px;
+  }
+
+  .container .timer-wrapper .timer-controls span{
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px;
   }
 }
